@@ -8,6 +8,7 @@ import (
 	"github.com/labstack/echo"
 )
 
+//go:generate mockgen -destination=./mocks/usecases_mock.go -package=mocks gmgalvan/edChallenge2021/internal/transport Usecases
 type Usecases interface {
 	RetrieveChart(ticker *schema.Ticker) (*schema.Chart, error)
 }

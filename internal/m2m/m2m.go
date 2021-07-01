@@ -1,6 +1,7 @@
 package m2m
 
 import (
+	"errors"
 	"io"
 	"log"
 	"net/http"
@@ -28,6 +29,9 @@ func (m2m *M2M) GET(url string) ([]byte, error) {
 		return nil, err
 	}
 	defer resp.Body.Close()
+	if resp.StatusCode != http.StatusOK {
+		return nil, errors.New("status code different to 200 on calling nomics")
+	}
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		log.Printf("Error on get body from url %v", url)

@@ -14,6 +14,7 @@ import (
 
 var NomicsAPIKey = os.Getenv("NOMICS_KEY")
 
+//go:generate mockgen -destination=./mocks/m2m_client_mock.go -package=mocks gmgalvan/edChallenge2021/internal/usecases M2MClientCall
 type M2MClientCall interface {
 	GET(url string) ([]byte, error)
 }

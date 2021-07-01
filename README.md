@@ -25,3 +25,8 @@ curl -X 'GET' "http://localhost:8080/api/v1/nomics/chart?id=ETH&start=20210112&e
 - Resultado
 
 ![chart](images/chart.png)
+
+## Ejecutar tests
+```
+go test ./...
+```
