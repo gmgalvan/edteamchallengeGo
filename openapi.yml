@@ -1,0 +1,46 @@
+swagger: '2.0'
+info:
+  version: '0.0.1'
+  title: App for get cryptocurrencies charts historical
+schemes: [http]
+basePath: /
+paths:
+  /internal/heartbeat:
+    get:
+      tags: [internal]
+      description: Server status 
+      operationId: heartbeatStatus
+      responses:
+        200:
+          description: 'OK'
+  /api/v1/nomics:
+    get:
+      tags: [nomics]
+      description: Get chart report from cryptocureency ticker id, date interval or convert 
+      operationId: GetChart
+      produces:
+        - image/png
+      parameters:
+      - in: query
+        name: start
+        type: string
+        description: where format is YYYYMMDD
+      - in: query
+        name: end
+        type: string
+        description: where format is YYYYMMDD
+      - in: query
+        name: id
+        type: string
+        description: ticker of the cryptocurrency BTC, ETH, etc..
+      - in: query
+        name: convert
+        type: string
+        description: Currency to convert, default USD
+      responses:
+        200:
+          description: 'Chart image with the cryptocurrency report'
+        400:
+          description: Bad Request, missing a query parameter
+        500:
+          description: Server error

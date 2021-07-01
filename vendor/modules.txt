@@ -1,0 +1,57 @@
+# github.com/blend/go-sdk v1.20210701.2
+## explicit
+# github.com/dgrijalva/jwt-go v3.2.0+incompatible
+github.com/dgrijalva/jwt-go
+# github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0
+## explicit
+github.com/golang/freetype/raster
+github.com/golang/freetype/truetype
+# github.com/labstack/echo v3.3.10+incompatible
+## explicit
+github.com/labstack/echo
+github.com/labstack/echo/middleware
+# github.com/labstack/gommon v0.3.0
+## explicit
+github.com/labstack/gommon/bytes
+github.com/labstack/gommon/color
+github.com/labstack/gommon/log
+github.com/labstack/gommon/random
+# github.com/mattn/go-colorable v0.1.6
+github.com/mattn/go-colorable
+# github.com/mattn/go-isatty v0.0.12
+github.com/mattn/go-isatty
+# github.com/stretchr/testify v1.6.0
+## explicit
+# github.com/valyala/bytebufferpool v1.0.0
+github.com/valyala/bytebufferpool
+# github.com/valyala/fasttemplate v1.2.1
+## explicit
+github.com/valyala/fasttemplate
+# github.com/wcharczuk/go-chart v2.0.1+incompatible
+## explicit
+github.com/wcharczuk/go-chart
+github.com/wcharczuk/go-chart/drawing
+github.com/wcharczuk/go-chart/matrix
+github.com/wcharczuk/go-chart/roboto
+github.com/wcharczuk/go-chart/seq
+github.com/wcharczuk/go-chart/util
+# golang.org/x/crypto v0.0.0-20210616213533-5ff15b29337e
+## explicit
+golang.org/x/crypto/acme
+golang.org/x/crypto/acme/autocert
+# golang.org/x/image v0.0.0-20210628002857-a66eb6448b8d
+## explicit
+golang.org/x/image/draw
+golang.org/x/image/font
+golang.org/x/image/math/f64
+golang.org/x/image/math/fixed
+# golang.org/x/net v0.0.0-20210226172049-e18ecbb05110
+golang.org/x/net/idna
+# golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1
+golang.org/x/sys/internal/unsafeheader
+golang.org/x/sys/unix
+# golang.org/x/text v0.3.6
+golang.org/x/text/secure/bidirule
+golang.org/x/text/transform
+golang.org/x/text/unicode/bidi
+golang.org/x/text/unicode/norm
