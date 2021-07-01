@@ -30,3 +30,5 @@ curl -X 'GET' "http://localhost:8080/api/v1/nomics/chart?id=ETH&start=20210112&e
 ```
 go test ./...
 ```
+## Swagger editor
+Documentación de swagger, copiar y pegar del archivo `openapi.yml` [aqui](https://editor.swagger.io/)
